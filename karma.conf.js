@@ -17,7 +17,6 @@ module.exports = function(config) {
     files: [
         'tests/Calculator.spec.js',
         'src/Calculator.js',
-        
     ],
 
 
@@ -39,9 +38,9 @@ module.exports = function(config) {
     reporters: ['mocha'],
     mochaReporter: {
       colors: {
-        success: 'blue',
+        success: 'cyan',
         info: 'bgGreen',
-        warning: 'cyan',
+        warning: 'yellow',
         error: 'bgRed'
       },
       symbols: {

@@ -1,4 +1,4 @@
-var Calculator = function (){ };
+/*var Calculator = function (){ };
 
 Calculator.prototype.add = function(a, b){
     return a + b;
@@ -6,7 +6,7 @@ Calculator.prototype.add = function(a, b){
 
 Calculator.prototype.subtract = function(a, b){
     return a - b;
-}
+}*/
 
 var RomanCalculator = function() {};
 
@@ -25,18 +25,17 @@ RomanCalculator.prototype.add = function(a,b){
         number = number.replace('IV','IIII');
         number = number.replace('V','IIIII');
         number = number.replace('IX','IIIIIIIII');
-        number = number.replace('LX', 'IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
         number = number.replace('XL','IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
         number = number.replace('L','IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
         number = number.replace('XX','IIIIIIIIIIIIIIIIIIII');
         number = number.replace('X','IIIIIIIIII');
-       
+        
         return number;
     }
 
     function ConvertToRoman(sumRoman){
-        sumRoman = sumRoman.replace('LX', 'IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
-        sumRoman = sumRoman.replace('IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII','L');
+        //sumRoman = sumRoman.replace('IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII','XC');
+        sumRoman = sumRoman.replace('IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII','L');            
         sumRoman = sumRoman.replace('IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII','XL');
         sumRoman = sumRoman.replace('IIIIIIIIIIIIIIIIIIII','XX');
         sumRoman = sumRoman.replace('IIIIIIIIII','X');
@@ -47,4 +46,3 @@ RomanCalculator.prototype.add = function(a,b){
         return sumRoman;
     }
 }
-

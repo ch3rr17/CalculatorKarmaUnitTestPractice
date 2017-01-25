@@ -1,4 +1,4 @@
-describe("Calculator", function(){
+/*describe("Calculator", function(){
     it('should be able to add 1 and 1', function(){
         var calc = new Calculator();
         expect(calc.add(1,1)).toBe(2);
@@ -10,7 +10,7 @@ describe("Calculator", function(){
         var calc = new Calculator();
         expect(calc.subtract(3,1)).toBe(2);
     });
-});
+});*/
 
 describe("RomanCalculator", function(){
     it('should return I plus I equals II', function(){
@@ -98,16 +98,18 @@ describe("RomanCalculator", function(){
     });
 });
 
+//tester - remove in prod
+/*describe("RomanCalculator", function(){
+    it('should return XL plus V equals XLV', function(){
+        var roman = new RomanCalculator();
+        expect(roman.add('XL', 'V')).toBe('XLV');
+    });
+});*/
+
+//45 + 45 = 90
 describe("RomanCalculator", function(){
     it('should return XLV plus XLV equals XC', function(){
         var roman = new RomanCalculator();
         expect(roman.add('XLV','XLV')).toBe('XC');
     });
 });
-
-
-
-
-
-
-
